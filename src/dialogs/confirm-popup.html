@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Dialog for My Office Add-in</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui. -->
+        <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css"/>
+
+        <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+        <script type="text/javascript" src="confirm-popup.js"></script>
+
+        <style>
+            .button-group {
+                display: flex;
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            .modal-button {
+                border: none;
+                color: white;
+                padding: 10px 22px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+            }
+
+            .yes-button {
+                background-color: #4CAF50; /* Green */
+            }
+
+            .no-button {
+                background-color: #e7e7e7;
+                color: black; /* Gray */
+            }
+
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                color: #333;
+            }
+
+            body {
+                padding: 20px;
+            }
+        </style>
+
+    </head>
+    <body style="display:flex;flex-direction:column;align-items:center;justify-content:center">
+        <p class="ms-font-sm">Are you are you want to proceed with this action?</p>
+        <!-- <input id="name-box" type="text"/><br/><br/> -->
+        <div class="button-group">
+            <button id="yes-button" class="modal-button yes-button">YES</button>
+            <button id="no-button" class="modal-button no-button">NO</button>
+        </div>
+    </body>
+</html>
